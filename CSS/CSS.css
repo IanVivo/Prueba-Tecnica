@@ -1,0 +1,120 @@
+body {
+  font-family: Arial, sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+
+.container {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.input-section {
+  margin-bottom: 30px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #555;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border-color: #4caf50;
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.clear-btn {
+  background-color: #f44336;
+}
+
+.clear-btn:hover {
+  background-color: #da190b;
+}
+
+.dictionary-info {
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.dictionary-info h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+.results {
+  margin-top: 30px;
+}
+
+.results h3 {
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.combinations-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.combination-item {
+  background-color: #e8f5e8;
+  padding: 8px;
+  border-radius: 3px;
+  text-align: center;
+  font-family: monospace;
+  font-size: 14px;
+  border: 1px solid #c8e6c9;
+}
+
+.error {
+  color: #d32f2f;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.count {
+  font-weight: bold;
+  color: #4caf50;
+  margin-bottom: 10px;
+}

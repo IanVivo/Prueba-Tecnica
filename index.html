@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Generador de Combinaciones de Letras</title>
+    <link rel="stylesheet" href="CSS/CSS.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>🔤 Generador de Combinaciones de Letras</h1>
+
+      <div class="dictionary-info">
+        <h3>Diccionario de números a letras:</h3>
+        <p>
+          <strong>2:</strong> a, b, c | <strong>3:</strong> d, e, f |
+          <strong>4:</strong> g, h, i | <strong>5:</strong> j, k, l
+        </p>
+        <p>
+          <strong>6:</strong> m, n, o | <strong>7:</strong> p, q, r, s |
+          <strong>8:</strong> t, u, v | <strong>9:</strong> w, x, y, z
+        </p>
+      </div>
+
+      <div class="input-section">
+        <label for="numbersInput">Introduce los números (2-9):</label>
+        <input
+          type="text"
+          id="numbersInput"
+          placeholder="Ej: 23, 234, 789..."
+          maxlength="10"
+        />
+        <div style="margin-top: 10px">
+          <button onclick="generateCombinations()">
+            Generar Combinaciones
+          </button>
+          <button
+            onclick="clearInput()"
+            class="clear-btn"
+            style="margin-left: 10px"
+          >
+            Limpiar
+          </button>
+        </div>
+        <div id="error" class="error"></div>
+      </div>
+
+      <div id="results" class="results" style="display: none">
+        <h3>Resultados:</h3>
+        <div id="count" class="count"></div>
+        <div id="combinations" class="combinations-grid"></div>
+      </div>
+    </div>
+    <script src="JS/app.js"></script>
+  </body>
+</html>
