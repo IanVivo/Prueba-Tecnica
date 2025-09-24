@@ -47,6 +47,42 @@ function letterCombinations(digits) {
    *   - Resultado final: ["ad", "ae", "af", "bd", "be", "bf", "cd", "ce", "cf"]
    */
 
+  /* ALTERNATIVA MÁS SIMPLE CON BUCLES ANIDADOS:
+   * Esta implementación es más fácil de entender y debuggear
+   *
+   * let combinacion = [""];
+   *
+   * // Para cada grupo de letras del diccionario
+   * for (let letras of letrasArray) {
+   *     let nuevasCombinaciones = [];
+   *
+   *     // Para cada combinación que ya tenemos
+   *     for (let combinacionActual of combinacion) {
+   *         // Para cada letra del grupo actual
+   *         for (let letra of letras) {
+   *             // Crear nueva combinación añadiendo la letra
+   *             nuevasCombinaciones.push(combinacionActual + letra);
+   *         }
+   *     }
+   *
+   *     // Actualizar nuestras combinaciones
+   *     combinacion = nuevasCombinaciones;
+   * }
+   *
+   * EXPLICACIÓN CON EJEMPLO "23":
+   * Inicio: combinacion = [""]
+   *
+   * Grupo 1: letras = ["a","b","c"]
+   *   - "" + "a" = "a", "" + "b" = "b", "" + "c" = "c"
+   *   - combinacion = ["a", "b", "c"]
+   *
+   * Grupo 2: letras = ["d","e","f"]
+   *   - "a" + "d" = "ad", "a" + "e" = "ae", "a" + "f" = "af"
+   *   - "b" + "d" = "bd", "b" + "e" = "be", "b" + "f" = "bf"
+   *   - "c" + "d" = "cd", "c" + "e" = "ce", "c" + "f" = "cf"
+   *   - Resultado final: ["ad", "ae", "af", "bd", "be", "bf", "cd", "ce", "cf"]
+   */
+
   return combinacion;
 }
 
